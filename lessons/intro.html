@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson: Introduction to the Chessboard</title>
+  <link rel="stylesheet" href="../Styles/styles.css">
+  <link rel="stylesheet" href="../Styles/board.css">
+  <link rel="stylesheet" href="../Styles/sidebar.css">
+  <link rel="stylesheet" href="../Styles/lessons.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <a href="../index.html" class="nav-link">🏠 Home</a>
+    <a href="../learn.html" class="nav-link">📖 Learn</a>
+    <a href="../play.html" class="nav-link">🎮 Play</a>
+  </aside>
+
+  <main class="lesson-content">
+    <!-- Lesson text -->
+    <section class="lesson-info">
+      <h1>Introduction to the Chessboard</h1>
+      <p>
+        The chessboard has <strong>64 squares</strong>, arranged in 
+        <strong>8 rows (ranks)</strong> and <strong>8 columns (files)</strong>.  
+        The squares alternate between light (<span class="light-example">light</span>) 
+        and dark (<span class="dark-example">dark</span>) colors.
+      </p>
+      <p>
+        Notice the labels: <strong>letters (a–h)</strong> at the bottom and 
+        <strong>numbers (1–8)</strong> on the side. Together, these form 
+        coordinates for every square. For example, the bottom left corner is <strong>a1</strong>.
+      </p>
+      <p>
+        Rule of thumb: the <strong>bottom-right square should always be light</strong>.
+      </p>
+    </section>
+
+    <!-- Interactive board -->
+    <section class="lesson-board">
+      <div class="board-container">
+        <div class="board"></div>
+        <div class="rank-labels white-rank-labels">
+          <div class="dark-square-board-label">1</div>
+          <div class="light-square-board-label">2</div>
+          <div class="dark-square-board-label">3</div>
+          <div class="light-square-board-label">4</div>
+          <div class="dark-square-board-label">5</div>
+          <div class="light-square-board-label">6</div>
+          <div class="dark-square-board-label">7</div>
+          <div class="light-square-board-label">8</div>
+        </div>
+        <div class="file-labels white-file-labels">
+          <div class="dark-square-board-label">a</div>
+          <div class="light-square-board-label">b</div>
+          <div class="dark-square-board-label">c</div>
+          <div class="light-square-board-label">d</div>
+          <div class="dark-square-board-label">e</div>
+          <div class="light-square-board-label">f</div>
+          <div class="dark-square-board-label">g</div>
+          <div class="light-square-board-label">h</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="lesson-nav">
+      <button class="lesson-prev">⬅ Previous</button>
+      <button class="lesson-next">Next ➡</button>
+    </section>
+  </main>
+
+  <script src="../Scripts/game.js"></script>
+</body>
+</html>

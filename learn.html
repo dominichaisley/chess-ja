@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess in Jamaica</title>
+    <link rel="stylesheet" href="Styles/styles.css"/>
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/learn.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <a href="index.html" class="nav-link">🏠 Home</a>
+      <a href="learn.html" class="nav-link">📖 Learn</a>
+      <a href="play.html" class="nav-link">🎮 Play</a>
+    </aside>
+
+    <main class="content">
+      <div class="heading-container">
+        <h1>Lessons</h1>
+        <p>Start your chess journey — move through each level from Pawn to King!</p>
+      </div>
+
+      <div class="chapters-container">
+        
+        <!-- Pawn Level -->
+        <div class="chapter pawn-chapter-header">
+          <button class="chapter-toggle">Pawn Level ⬇</button>
+          <div class="chapter-content">
+            <ul>
+              <li><a href="lessons/intro.html">Introduction to the chessboard</a></li>
+              <li><a>Pawn movement, capturing, promotion</a></li>
+              <li><a>Rook movement</a></li>
+              <li><a>Bishop movement</a></li>
+              <li><a>Knight movement</a></li>
+              <li><a>Queen movement</a></li>
+              <li><a>King movement</a></li>
+              <li><a>Special rules: castling, en passant</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Knight Level -->
+        <div class="chapter knight-chapter-header">
+          <button class="chapter-toggle">Knight Level ⬇</button>
+          <div class="chapter-content">
+            <ul>
+              <li><button>Piece values & exchanges</button></li>
+              <li><button>Controlling the center</button></li>
+              <li><button>Developing knights & bishops</button></li>
+              <li><button>Castling for safety</button></li>
+              <li><button>Avoiding early queen traps</button></li>
+              <li><button>Simple checkmates (2 rooks, queen + king)</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bishop Level -->
+        <div class="chapter bishop-chapter-header">
+          <button class="chapter-toggle">Bishop Level ⬇</button>
+          <div class="chapter-content">
+            <ul>
+              <li><button>Pins</button></li>
+              <li><button>Forks</button></li>
+              <li><button>Skewers</button></li>
+              <li><button>Discovered attacks</button></li>
+              <li><button>Double checks</button></li>
+              <li><button>Removing the defender</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rook Level -->
+        <div class="chapter rook-chapter-header">
+          <button class="chapter-toggle">Rook Level ⬇</button>
+          <div class="chapter-content">
+            <ul>
+              <li><button>Open files and rook activity</button></li>
+              <li><button>Rook lifts</button></li>
+              <li><button>Opposition in king + pawn endgames</button></li>
+              <li><button>Basic rook endgames</button></li>
+              <li><button>Zugzwang</button></li>
+              <li><button>Outposts</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Queen Level -->
+        <div class="chapter queen-chapter-header">
+          <button class="chapter-toggle">Queen Level ⬇</button>
+          <div class="chapter-content">
+            <ul>
+              <li><button>Pawn structures</button></li>
+              <li><button>Weak squares & color complexes</button></li>
+              <li><button>Outposts</button></li>
+              <li><button>Trading pieces wisely</button></li>
+              <li><button>Transition to middlegame</button></li>
+              <li><button>Typical sacrifices</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- King Level -->
+        <div class="chapter king-chapter-header">
+          <button class="chapter-toggle">King Level ⬇</button>
+          <div class="chapter-content">
+            <ul>
+              <li><button>King as a fighting piece</button></li>
+              <li><button>Opposition & triangulation</button></li>
+              <li><button>Lucena & Philidor positions</button></li>
+              <li><button>Queen vs pawn endgames</button></li>
+              <li><button>Practical decision-making</button></li>
+              <li><button>Analyzing your own games</button></li>
+              <li><button>Famous master games</button></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="Scripts/learn.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chess Lessons - Chess in Jamaica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #15803d, #facc15, #000000);
+      color: white;
+    }
+    .sidebar {
+      background: black;
+      width: 220px;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #facc15;
+    }
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: background 0.3s;
+      display: block;
+    }
+    .nav-link:hover {
+      background: #333;
+    }
+    .content {
+      flex: 1;
+      padding: 2rem;
+    }
+    .content h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .lesson-container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.9);
+      color: black;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .lesson-step {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: #fef9c3;
+    }
+    .lesson-step h3 {
+      margin-top: 0;
+      color: #15803d;
+    }
+    .lesson-board {
+      display: grid;
+      grid-template-columns: repeat(8, 50px);
+      grid-template-rows: repeat(8, 50px);
+      margin: 1rem auto;
+      width: 400px;
+      border: 3px solid #333;
+    }
+    .square {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    .dark {
+      background: #15803d;
+    }
+    .light {
+      background: #fef9c3;
+    }
+    .btn-next {
+      display: inline-block;
+      background: #facc15;
+      color: black;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn-next:hover {
+      background: #fde047;
+    }
+    footer {
+      background: black;
+      padding: 1rem;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html" class="nav-link">🏠 Home</a>
+    <a href="lessons.html" class="nav-link">📖 Lessons</a>
+    <a href="play.html" class="nav-link">🎮 Play</a>
+    <a href="community.html" class="nav-link">🗺️ Explore</a>
+  </aside>
+
+  <main class="content">
+    <h1>Chess Lessons for Kids 🇯🇲</h1>
+
+    <div class="lesson-container">
+      <div class="lesson-step">
+        <h3>Lesson 1: Meet the Pawns</h3>
+        <p>Pawns are your little soldiers. They move forward one square, but capture diagonally. Let’s see them in action!</p>
+        <div class="lesson-board">
+           Simple static chessboard with pawns 
+          <div class="square light">♙</div>
+          <div class="square dark">♙</div>
+          <div class="square light">♙</div>
+          <div class="square dark">♙</div>
+          <div class="square light">♙</div>
+          <div class="square dark">♙</div>
+          <div class="square light">♙</div>
+          <div class="square dark">♙</div>
+
+           Fill rest of board empty 
+          <script>
+            // Generate empty squares dynamically
+            const board = document.currentScript.parentElement;
+            const totalSquares = 64;
+            let filled = 8;
+            for (let i = filled; i < totalSquares; i++) {
+              const div = document.createElement('div');
+              div.classList.add('square');
+              const row = Math.floor(i / 8);
+              const col = i % 8;
+              if ((row + col) % 2 === 0) {
+                div.classList.add('light');
+              } else {
+                div.classList.add('dark');
+              }
+              board.appendChild(div);
+            }
+          </script>
+        </div>
+        <a href="#" class="btn-next">Next Lesson →</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Jamaican Kids Chess. Built with love for the island. 🇯🇲</p>
+    </footer>
+  </main>
+</body>
+</html> -->

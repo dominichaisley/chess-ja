@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/styles.css">
+  <link rel="stylesheet" href="Styles/board.css">
+  <link rel="stylesheet" href="Styles/sidebar.css">
+  <link rel="stylesheet" href="Styles/menus.css">
+  <link rel="stylesheet" href="Styles/promotion.css">
+  <title>Chess</title>
+</head>
+<body>
+  <!-- <nav>
+    <div class="nav-top"><img src="">Chess.com</div>
+    <div><img src="">Play</div>
+
+    <div><img src="">Puzzles</div>
+    <div><img src="">Learn</div>
+    <div><img src="">Watch</div>
+    <div><img src="">News</div>
+    <div><img src="">Social</div>
+    <div><img src="">Shop</div>
+    <div><img src="">More</div>
+  </nav> -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html" class="nav-link">🏠 Home</a>
+    <a href="learn.html" class="nav-link">📖 Learn</a>
+    <a href="play.html" class="nav-link">🎮 Play</a>
+    <!-- <a href="#" class="nav-link">🏆 Compete</a>
+    <a href="#" class="nav-link">🗺️ Explore</a> -->
+  </aside>
+  <main>
+    <div class="eval-bar">
+      <div class="black-eval"></div>
+      <div class="white-eval"><div>0</div></div>
+    </div>
+    <div>
+      <div class="board-container">
+        <div class="board"></div>
+        <div class="white-promotion-selection top-promotion-selection hidden">
+          <button class="white-queen-promotion"><img src="Pieces/white-queen.svg"></button>
+          <button class="white-knight-promotion"><img src="Pieces/white-knight.svg"></button>
+          <button class="white-rook-promotion"><img src="Pieces/white-rook.svg"></button>
+          <button class="white-bishop-promotion"><img src="Pieces/white-bishop.svg"></button>
+          <button class="exit-white-promotion">&#215</button>
+        </div>
+        <div class="black-promotion-selection bottom-promotion-selection hidden">
+          <button class="black-queen-promotion"><img src="Pieces/black-queen.svg"></button>
+          <button class="black-knight-promotion"><img src="Pieces/black-knight.svg"></button>
+          <button class="black-rook-promotion"><img src="Pieces/black-rook.svg"></button>
+          <button class="black-bishop-promotion"><img src="Pieces/black-bishop.svg"></button>
+          <button class="exit-black-promotion">&#215</button>
+        </div>
+        <div class="rank-labels white-rank-labels">
+          <div class="dark-square-board-label">1</div>
+          <div class="light-square-board-label">2</div>
+          <div class="dark-square-board-label">3</div>
+          <div class="light-square-board-label">4</div>
+          <div class="dark-square-board-label">5</div>
+          <div class="light-square-board-label">6</div>
+          <div class="dark-square-board-label">7</div>
+          <div class="light-square-board-label">8</div>
+        </div>
+        <div class="file-labels white-file-labels">
+          <div class="dark-square-board-label">a</div>
+          <div class="light-square-board-label">b</div>
+          <div class="dark-square-board-label">c</div>
+          <div class="light-square-board-label">d</div>
+          <div class="dark-square-board-label">e</div>
+          <div class="light-square-board-label">f</div>
+          <div class="dark-square-board-label">g</div>
+          <div class="light-square-board-label">h</div>
+        </div>
+      </div>
+      <!--<div class="start-game-menu">
+        <div>Select a Game Mode</div>
+        <div>
+          <button class="game-control-button bot-vs-bot">Bot VS Bot</button>
+          <button class="game-control-button play-vs-bot">Play VS Bot</button>
+          <button class="game-control-button pass-and-play">Pass &amp; Play</button>
+        </div>
+      </div>
+      <div class="select-bots-menu hidden">
+        <div>
+          <div>Bot 1</div>
+          <select class="bot-1-selection">
+            <option>Gen 1</option>
+            <option>Gen 2</option>
+            <option>Gen 3</option>
+          </select>
+        </div>
+        <div>
+          <div>Bot 2</div>
+          <select class="bot-2-selection">
+            <option>Gen 1</option>
+            <option>Gen 2</option>
+            <option>Gen 3</option>
+          </select>
+        </div>
+        <div>
+          <button class="select-bots-menu-play-button">Play</button>
+        </div>
+      </div>
+      <div class="select-player-color-menu hidden">
+        <div>Select Your Color</div>
+        <div>
+          <button class="game-control-button play-as-white">White</button>
+          <button class="game-control-button play-as-black">Black</button>
+        </div>
+      </div>-->
+      <div class="result hidden"></div>
+      <button class="below-board-new-game-button game-control-button">New Game</button>
+      <button class="rotate-board-button game-control-button">Rotate</button>
+      <button class="white-resign-board-button game-control-button">White Resigns</button>
+      <button class="draw-board-button game-control-button">Draw</button>
+      <button class="black-resign-board-button game-control-button">Black Resigns</button>
+    </div>
+    <div class="side-menu">
+      <div class="start-game-menu">
+        <div class="start-game-menu-text">Select a Game Mode</div>
+        <div>
+          <button class="game-control-button bot-vs-bot">Bot VS Bot</button>
+          <button class="game-control-button play-vs-bot">Play VS Bot</button>
+          <button class="game-control-button pass-and-play">Pass &amp; Play</button>
+        </div>
+      </div>
+      <div class="select-bots-menu hidden">
+        <div>
+          <div>Bot 1</div>
+          <select class="bot-1-selection">
+            <option>Gen 1</option>
+            <option>Gen 2</option>
+            <option>Gen 3</option>
+          </select>
+        </div>
+        <div>
+          <div>Bot 2</div>
+          <select class="bot-2-selection">
+            <option>Gen 1</option>
+            <option>Gen 2</option>
+            <option>Gen 3</option>
+          </select>
+        </div>
+        <div>
+          <button class="select-bots-menu-play-button">Play</button>
+        </div>
+      </div>
+      <div class="select-player-color-menu hidden">
+        <div>Select Your Color</div>
+        <div>
+          <button class="game-control-button play-as-white">White</button>
+          <button class="game-control-button play-as-black">Black</button>
+        </div>
+      </div>
+      <div class="scoreboard"></div>
+    </div>
+  </main>
+  <script src="Scripts/game.js"></script>
+</body>
+</html>

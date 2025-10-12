@@ -1,0 +1,60 @@
+.content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+.btn-primary {
+  display: inline-block;
+  background: #facc15;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+.btn-primary:hover {
+  background: #fde047;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.card {
+  background: white;
+  color: black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+.card p {
+  font-size: 0.9rem;
+}
+footer {
+  background: black;
+  padding: 1rem;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  text-align: center;
+}

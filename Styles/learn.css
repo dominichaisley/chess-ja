@@ -1,0 +1,98 @@
+.content {
+  padding: 30px;
+  width: 100%;
+}
+
+/* Heading */
+.heading-container {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  color: #facc15;
+  text-align: center;
+}
+
+/* Chapters */
+.chapters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chapter {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Toggle button */
+.chapter-toggle {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+/* Content hidden by default */
+.chapter-content {
+  display: none;
+  background: rgba(0,0,0,0.2);
+  padding: 10px 20px;
+}
+
+.chapter-content ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.chapter-content li {
+  margin: 8px 0;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.chapter-content li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.pawn-chapter-header li { background-color: #3b82f6; }
+.pawn-chapter-header li:hover { background-color: #3b83f67d; }
+
+.knight-chapter-header li { background-color: #8b5cf6; } 
+.knight-chapter-header li:hover { background-color: #8a5cf67d; } 
+
+.bishop-chapter-header li { background-color: #ef4444; }
+.bishop-chapter-header li:hover { background-color: #ef44447d; }
+
+.rook-chapter-header li { background-color: #10b981; }
+.rook-chapter-header li:hover { background-color: #10b9817d; }
+
+.queen-chapter-header li { background-color: #facc15; color: black; }
+.queen-chapter-header li:hover { background-color: #facc157d; color: black; }
+
+
+.king-chapter-header li { background-color: #f97316; }
+.king-chapter-header li:hover { background-color: #f973167d; }
+
+.pawn-chapter-header { background-color: #3b82f6; color: white; }
+.knight-chapter-header { background-color: #8b5cf6; color: white; }
+.bishop-chapter-header { background-color: #ef4444; color: white; }
+.rook-chapter-header { background-color: #10b981; color: white; }
+.queen-chapter-header { background-color: #facc15; color: black; }
+.king-chapter-header { background-color: #f97316; color: white; }

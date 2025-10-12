@@ -1,0 +1,29 @@
+.sidebar {
+  background: black;
+  width: 220px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #facc15;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+  display: block;
+}
+
+.nav-link:hover {
+  background: #333;
+}

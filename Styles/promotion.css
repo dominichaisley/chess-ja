@@ -1,0 +1,101 @@
+
+.white-promotion-selection {
+  display: flex;
+  width: 75px;
+  position: absolute;
+  z-index: 101;
+  box-shadow: 3px 3px 10px 0 rgb(60, 60, 60);
+}
+
+.white-promotion-selection button {
+  height: 75px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-promotion-selection button:last-of-type {
+  height: 35px;
+  background-color: rgb(225, 225, 225);
+  font-size: 30px;
+}
+
+.white-promotion-selection button:hover {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+}
+
+.white-promotion-selection button img {
+  height: 80px;
+}
+
+.black-promotion-selection {
+  display: flex;
+  width: 75px;
+  position: absolute;
+  z-index: 101;
+  box-shadow: 3px 3px 10px 0 rgb(60, 60, 60);
+  border-radius: 5px;
+}
+
+.black-promotion-selection button {
+  height: 75px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-promotion-selection button:first-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.black-promotion-selection button:last-of-type {
+  height: 35px;
+  background-color: rgb(230, 230, 230);
+  font-size: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: rgb(120, 120, 120);
+}
+
+.black-promotion-selection button:hover {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+}
+
+.black-promotion-selection button img {
+  height: 80px;
+}
+
+.top-promotion-selection {
+  flex-direction: column;
+  top: 0;
+}
+
+.top-promotion-selection button:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.top-promotion-selection button:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bottom-promotion-selection {
+  flex-direction: column-reverse;
+  bottom: 0;
+}
+
+.bottom-promotion-selection button:first-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bottom-promotion-selection button:last-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
